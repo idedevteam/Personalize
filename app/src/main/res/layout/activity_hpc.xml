@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/formText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FORM HPC"
+        android:textAlignment="center"
+        android:textSize="30px"
+        android:layout_marginTop="20px"/>
+
+    <ScrollView
+        android:layout_below="@+id/formText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Role"/>
+
+            <EditText
+                android:id="@+id/pin"
+                android:layout_below="@+id/role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="5"
+                android:inputType="number"
+                android:hint="PIN"/>
+
+            <EditText
+                android:id="@+id/pinVerify"
+                android:layout_below="@+id/role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="5"
+                android:inputType="number"
+                android:hint="Masukan PIN"/>
+
+            <EditText
+                android:id="@+id/nik"
+                android:layout_below="@+id/role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="16"
+                android:inputType="number"
+                android:hint="NIK"/>
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_below="@+id/nik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama"/>
+
+            <EditText
+                android:id="@+id/sip"
+                android:layout_below="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="SIP"/>
+
+            <Button
+                android:id="@+id/simpanBtn"
+                android:layout_below="@+id/sip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIMPAN"/>
+
+            <Button
+                android:id="@+id/pinBtn"
+                android:layout_below="@+id/pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIMPAN PIN"/>
+
+            <Button
+                android:id="@+id/pinVerifyBtn"
+                android:layout_below="@+id/pinVerify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VERIFY PIN"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

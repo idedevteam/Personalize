@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Personalize</string>
+
+    <string-array name="role">
+    <item>DOKTER</item>
+    <item>PENDAFTARAN</item>
+    </string-array>
+
+    <string-array name="hubunganKeluarga">
+        <item>DOKTER</item>
+        <item>PENDAFTARAN</item>
+    </string-array>
+
+    <string-array name="wilayahKerja">
+        <item>DOKTER</item>
+        <item>PENDAFTARAN</item>
+    </string-array>
+
+    <string-array name="jenisKelamin">
+        <item>DOKTER</item>
+        <item>PENDAFTARAN</item>
+    </string-array>
+
+    <string-array name="agama">
+        <item>DOKTER</item>
+        <item>PENDAFTARAN</item>
+    </string-array>
+
+    <string-array name="pendidikan">
+        <item>DOKTER</item>
+        <item>PENDAFTARAN</item>
+    </string-array>
+
+    <string-array name="pekerjaan">
+        <item>DOKTER</item>
+        <item>PENDAFTARAN</item>
+    </string-array>
+
+    <string-array name="kelasPerawatan">
+        <item>DOKTER</item>
+        <item>PENDAFTARAN</item>
+    </string-array>
+
+    <string-array name="statusPerkawinan">
+        <item>DOKTER</item>
+        <item>PENDAFTARAN</item>
+    </string-array>
+
+    <string-array name="kewarganegaraan">
+        <item>DOKTER</item>
+        <item>PENDAFTARAN</item>
+    </string-array>
+
+    <string-array name="hubunganKerabat">
+        <item>DOKTER</item>
+        <item>PENDAFTARAN</item>
+    </string-array>
+</resources>

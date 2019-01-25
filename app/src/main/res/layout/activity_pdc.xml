@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:id="@+id/formText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FORM PDC"
+        android:textAlignment="center"
+        android:textSize="30px"
+        android:layout_marginTop="20px"/>
+
+    <ScrollView
+        android:layout_below="@+id/formText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/nik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="NIK"/>
+
+            <EditText
+                android:id="@+id/kategoriPasien"
+                android:layout_below="@+id/nik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kategori Pasien"/>
+
+            <EditText
+                android:id="@+id/nomorAsuransi"
+                android:layout_below="@+id/kategoriPasien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nomor Asuransi"/>
+
+            <TextView
+                android:id="@+id/tanggalDaftar"
+                android:layout_below="@+id/nomorAsuransi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tanggal daftar "/>
+
+            <EditText
+                android:id="@+id/namaPasien"
+                android:layout_below="@+id/tanggalDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Pasien"/>
+
+            <EditText
+                android:id="@+id/namaKK"
+                android:layout_below="@+id/namaPasien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama KK"/>
+
+            <EditText
+                android:id="@+id/hubunganKeluarga"
+                android:layout_below="@+id/namaKK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hubungan Keluarga"/>
+
+            <EditText
+                android:id="@+id/alamat"
+                android:layout_below="@+id/hubunganKeluarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat "/>
+
+            <EditText
+                android:id="@+id/rt"
+                android:layout_below="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="RT "/>
+
+            <EditText
+                android:id="@+id/rw"
+                android:layout_below="@+id/rt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="RW "/>
+
+            <EditText
+                android:id="@+id/kelurahan"
+                android:layout_below="@+id/rw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kelurahan/Desa "/>
+
+            <EditText
+                android:id="@+id/kecamatan"
+                android:layout_below="@+id/kelurahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kecamatan "/>
+
+            <EditText
+                android:id="@+id/kabupaten"
+                android:layout_below="@+id/kecamatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kota/Kabupaten "/>
+
+            <EditText
+                android:id="@+id/provinsi"
+                android:layout_below="@+id/kabupaten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Provinsi "/>
+
+            <EditText
+                android:id="@+id/kodePos"
+                android:layout_below="@+id/provinsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kode pos "/>
+
+            <EditText
+                android:id="@+id/wilayahKerja"
+                android:layout_below="@+id/kodePos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Di luar/Di dalam wilayah kerja "/>
+
+            <EditText
+                android:id="@+id/tempatLahir"
+                android:layout_below="@+id/wilayahKerja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tempat lahir "/>
+
+            <EditText
+                android:id="@+id/tanggalLahir"
+                android:layout_below="@+id/tempatLahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tanggal lahir "/>
+
+            <EditText
+                android:id="@+id/telepon"
+                android:layout_below="@+id/tanggalLahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telepon "/>
+
+            <EditText
+                android:id="@+id/hp"
+                android:layout_below="@+id/telepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="HP "/>
+
+            <EditText
+                android:id="@+id/jenisKelamin"
+                android:layout_below="@+id/hp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jenis kelamin "/>
+
+            <EditText
+                android:id="@+id/agama"
+                android:layout_below="@+id/jenisKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Agama "/>
+
+            <EditText
+                android:id="@+id/pendidikan"
+                android:layout_below="@+id/agama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pendidikan "/>
+
+            <EditText
+                android:id="@+id/pekerjaan"
+                android:layout_below="@+id/pendidikan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pekerjaan "/>
+
+            <EditText
+                android:id="@+id/kelasPerawatan"
+                android:layout_below="@+id/pekerjaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kelas Perawatan "/>
+
+            <EditText
+                android:id="@+id/alamatEmail"
+                android:layout_below="@+id/kelasPerawatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat email "/>
+
+            <EditText
+                android:id="@+id/statusPerkawinan"
+                android:layout_below="@+id/alamatEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Status perkawinan"/>
+
+            <EditText
+                android:id="@+id/kewarganegaraan"
+                android:layout_below="@+id/statusPerkawinan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kewarganegaraan "/>
+
+            <EditText
+                android:id="@+id/namaKerabat"
+                android:layout_below="@+id/kewarganegaraan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama kerabat "/>
+
+            <EditText
+                android:id="@+id/hubunganKerabat"
+                android:layout_below="@+id/namaKerabat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hubungan kerabat "/>
+
+            <EditText
+                android:id="@+id/alamatKerabat"
+                android:layout_below="@+id/hubunganKerabat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat kerabat "/>
+
+            <EditText
+                android:id="@+id/kelurahanKerabat"
+                android:layout_below="@+id/alamatKerabat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kelurahan/Desa kerabat "/>
+
+            <EditText
+                android:id="@+id/kecamatanKerabat"
+                android:layout_below="@+id/kelurahanKerabat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kecamatan kerabat "/>
+
+            <EditText
+                android:id="@+id/kabupatenKerabat"
+                android:layout_below="@+id/kecamatanKerabat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kota/kabupaten kerabat "/>
+
+            <EditText
+                android:id="@+id/provinsiKerabat"
+                android:layout_below="@+id/kabupatenKerabat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Provinsi kerabat "/>
+
+            <EditText
+                android:id="@+id/kodePosKerabat"
+                android:layout_below="@+id/provinsiKerabat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kode pos kerabat "/>
+
+            <EditText
+                android:id="@+id/teleponKerabat"
+                android:layout_below="@+id/kodePosKerabat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telepon kerabat"/>
+
+            <EditText
+                android:id="@+id/hpKerabat"
+                android:layout_below="@+id/teleponKerabat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="HP kerabat "/>
+
+            <EditText
+                android:id="@+id/namaKantor"
+                android:layout_below="@+id/hpKerabat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama kantor"/>
+
+            <EditText
+                android:id="@+id/alamatKantor"
+                android:layout_below="@+id/namaKantor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat kantor"/>
+
+            <EditText
+                android:id="@+id/kabupatenKantor"
+                android:layout_below="@+id/alamatKantor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kota/kabupaten kantor "/>
+
+            <EditText
+                android:id="@+id/teleponKantor"
+                android:layout_below="@+id/kabupatenKantor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telepon kantor"/>
+
+            <EditText
+                android:id="@+id/hpKantor"
+                android:layout_below="@+id/teleponKantor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="HP Kantor "/>
+
+            <EditText
+                android:id="@+id/golonganDarah"
+                android:layout_below="@+id/hpKantor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Golongan darah "/>
+
+            <EditText
+                android:id="@+id/alergi"
+                android:layout_below="@+id/golonganDarah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alergi "/>
+
+            <EditText
+                android:id="@+id/riwayatOperasi"
+                android:layout_below="@+id/alergi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Riwayat operasi "/>
+
+            <EditText
+                android:id="@+id/riwayatRawat"
+                android:layout_below="@+id/riwayatOperasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Riwayat Rawat RS "/>
+
+            <EditText
+                android:id="@+id/riwayatKronis"
+                android:layout_below="@+id/riwayatRawat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Riwayat penyakit kronis "/>
+
+            <EditText
+                android:id="@+id/riwayatBawaan"
+                android:layout_below="@+id/riwayatKronis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Riwayat penyakit bawaan"/>
+
+            <EditText
+                android:id="@+id/faktorRisiko"
+                android:layout_below="@+id/riwayatBawaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Faktor Risiko"/>
+
+            <Button
+                android:id="@+id/simpanBtn"
+                android:layout_below="@+id/faktorRisiko"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIMPAN"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
